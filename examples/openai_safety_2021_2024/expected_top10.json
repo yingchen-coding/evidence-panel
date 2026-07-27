@@ -1,0 +1,92 @@
+{
+  "top_authors": [
+    {
+      "name": "Leike",
+      "paper_count": 4,
+      "supporting_paper_ids": [
+        "burns2023-w2s",
+        "christiano2017-preferences",
+        "leike2018-reward-modeling",
+        "wu2023-recursive"
+      ]
+    },
+    {
+      "name": "Wu",
+      "paper_count": 4,
+      "supporting_paper_ids": [
+        "burns2023-w2s",
+        "ouyang2022-instructgpt",
+        "stiennon2020-summarize",
+        "wu2023-recursive"
+      ]
+    },
+    {
+      "name": "Christiano",
+      "paper_count": 3,
+      "supporting_paper_ids": [
+        "christiano2017-preferences",
+        "stiennon2020-summarize",
+        "wu2023-recursive"
+      ]
+    },
+    {
+      "name": "Lowe",
+      "paper_count": 3,
+      "supporting_paper_ids": [
+        "ouyang2022-instructgpt",
+        "stiennon2020-summarize",
+        "wu2023-recursive"
+      ]
+    },
+    {
+      "name": "Ouyang",
+      "paper_count": 3,
+      "supporting_paper_ids": [
+        "ouyang2022-instructgpt",
+        "stiennon2020-summarize",
+        "wu2023-recursive"
+      ]
+    },
+    {
+      "name": "Amodei",
+      "paper_count": 2,
+      "supporting_paper_ids": [
+        "christiano2017-preferences",
+        "stiennon2020-summarize"
+      ]
+    },
+    {
+      "name": "Legg",
+      "paper_count": 2,
+      "supporting_paper_ids": [
+        "christiano2017-preferences",
+        "leike2018-reward-modeling"
+      ]
+    },
+    {
+      "name": "Martic",
+      "paper_count": 2,
+      "supporting_paper_ids": [
+        "christiano2017-preferences",
+        "leike2018-reward-modeling"
+      ]
+    },
+    {
+      "name": "Stiennon",
+      "paper_count": 2,
+      "supporting_paper_ids": [
+        "stiennon2020-summarize",
+        "wu2023-recursive"
+      ]
+    },
+    {
+      "name": "Ziegler",
+      "paper_count": 2,
+      "supporting_paper_ids": [
+        "stiennon2020-summarize",
+        "wu2023-recursive"
+      ]
+    }
+  ],
+  "cutoff_tie": []
+}

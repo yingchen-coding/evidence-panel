@@ -1,0 +1,10 @@
+[
+  {"paper_id": "christiano2017-preferences", "title": "Deep Reinforcement Learning from Human Preferences", "year": 2017, "authors": ["Christiano", "Leike", "Brown", "Martic", "Legg", "Amodei"]},
+  {"paper_id": "leike2018-reward-modeling", "title": "Scalable Agent Alignment via Reward Modeling", "year": 2018, "authors": ["Leike", "Krueger", "Everitt", "Martic", "Maini", "Legg"]},
+  {"paper_id": "stiennon2020-summarize", "title": "Learning to Summarize from Human Feedback", "year": 2020, "authors": ["Stiennon", "Ouyang", "Wu", "Ziegler", "Lowe", "Voss", "Radford", "Amodei", "Christiano"]},
+  {"paper_id": "ouyang2022-instructgpt", "title": "Training Language Models to Follow Instructions with Human Feedback", "year": 2022, "authors": ["Ouyang", "Wu", "Jiang", "Almeida", "Wainwright", "Mishkin", "Zhang", "Lowe"]},
+  {"paper_id": "bai2022-hh", "title": "Training a Helpful and Harmless Assistant with RLHF", "year": 2022, "authors": ["Bai", "Jones", "Ndousse", "Askell", "Kaplan"]},
+  {"paper_id": "burns2023-w2s", "title": "Weak-to-Strong Generalization", "year": 2023, "authors": ["Burns", "Izmailov", "Kirchner", "Baker", "Gao", "Aschenbrenner", "Chen", "Wu", "Leike"]},
+  {"paper_id": "openai2023-gpt4-syscard", "title": "GPT-4 System Card", "year": 2023, "authors": ["OpenAI"]},
+  {"paper_id": "wu2023-recursive", "title": "Recursively Summarizing Books with Human Feedback", "year": 2021, "authors": ["Wu", "Ouyang", "Ziegler", "Stiennon", "Lowe", "Leike", "Christiano"]}
+]
