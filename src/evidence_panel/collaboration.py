@@ -18,8 +18,8 @@ Model = Callable[[str], str]
 
 def build_prompt(lenses: list[AuthorLens], material: str, n: int) -> str:
     cards = "\n".join(
-        f"- {l.name} (lens; {l.paper_count} papers: {', '.join(l.supporting_paper_ids)})"
-        for l in lenses
+        f"- {lens.name} (lens; {lens.paper_count} papers: {', '.join(lens.supporting_paper_ids)})"
+        for lens in lenses
     )
     return (
         "Use the author cards below as PAPER-METHOD LENSES ONLY. Never impersonate a living "

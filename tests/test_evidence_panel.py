@@ -45,9 +45,9 @@ def test_ranking_matches_expected_fixture():
     lenses, cutoff_tie = top_lenses(papers, n=10)
     expected = json.loads((EXAMPLE / "expected_top10.json").read_text())
     got = [
-        {"name": l.name, "paper_count": l.paper_count,
-         "supporting_paper_ids": list(l.supporting_paper_ids)}
-        for l in lenses
+        {"name": lens.name, "paper_count": lens.paper_count,
+         "supporting_paper_ids": list(lens.supporting_paper_ids)}
+        for lens in lenses
     ]
     assert got == expected["top_authors"]
     assert cutoff_tie == expected["cutoff_tie"]
