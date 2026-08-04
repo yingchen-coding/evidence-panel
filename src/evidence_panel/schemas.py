@@ -47,8 +47,8 @@ class IdeaSeed:
     status: str = "PROPOSED EXPERIMENT"
 
     def validate(self) -> None:
-        if len(self.lenses) < 2:
-            raise ValueError(f"{self.title!r}: a coalition needs >=2 lenses")
+        if len(set(self.lenses)) < 2:
+            raise ValueError(f"{self.title!r}: a coalition needs >=2 distinct lenses")
         for name, val in (("falsifiable_claim", self.falsifiable_claim),
                           ("smallest_test", self.smallest_test),
                           ("failure_condition", self.failure_condition),

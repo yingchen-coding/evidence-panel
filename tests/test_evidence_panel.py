@@ -77,8 +77,32 @@ def test_idea_seed_requires_two_lenses():
         falsifiable_claim="c", smallest_test="t", failure_condition="f",
         preserved_dissent="d",
     )
-    with pytest.raises(ValueError, match=">=2 lenses"):
+    with pytest.raises(ValueError, match=">=2 distinct lenses"):
         seed.validate()
+
+
+def test_idea_seed_rejects_repeated_lens_as_fake_coalition():
+    """A 'coalition' that's really the same lens counted twice is not >=2 distinct lenses."""
+    seed = IdeaSeed(
+        title="fake coalition", lenses=("A", "A"), source_paper_ids=("p1",),
+        falsifiable_claim="c", smallest_test="t", failure_condition="f",
+        preserved_dissent="d",
+    )
+    with pytest.raises(ValueError, match=">=2 distinct lenses"):
+        seed.validate()
+
+
+def test_parse_ideas_drops_repeated_lens_coalition():
+    text = (
+        "TITLE: real idea\nLENSES: A, B\nSOURCES: p1, p2\nCLAIM: x compounds\n"
+        "TEST: run 30 cases\nFAILURE: within noise\nDISSENT: A vs B\n"
+        "---\n"
+        "TITLE: fake idea\nLENSES: A, A\nSOURCES: p1\nCLAIM: y\nTEST: z\n"
+        "FAILURE: w\nDISSENT: none\n"
+    )
+    seeds = parse_ideas(text)
+    assert len(seeds) == 1
+    assert seeds[0].title == "real idea"
 
 
 def test_parse_ideas_drops_malformed_and_single_lens():
